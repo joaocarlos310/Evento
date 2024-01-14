@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layput="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <link rel="stylesheet" href="style/styleCss.css"/>
+</head>
+
+<body>
+
+    <div class="alert alert-danger alert-dismissible" role="alert" th:if="${not #strings.isEmpty(mensagem)}">
+        <div th:text="${mensagem}"></div>
+    </div>   
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery.3.2.1.nin.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+
+</html>
